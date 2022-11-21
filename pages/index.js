@@ -6,6 +6,10 @@ import { Footer } from "../components/Footer";
 import { Links } from "../components/Links";
 import { HeadLine } from "../components/Headline";
 export default function Home() {
+  const onClickEvent = () => {
+    alert("Click!!!");
+  };
+
   return (
     <div className={styles.container}>
       <Head>
@@ -15,7 +19,11 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <HeadLine page="index" />
+        <HeadLine
+          page="index"
+          code={<code className={styles.code}>pages/index.js</code>}
+          onClick={onClickEvent}
+        />
 
         <Links />
       </main>
