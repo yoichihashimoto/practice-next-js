@@ -7,8 +7,9 @@ export const HeadLine = (props) => {
     <>
       <h1 className={styles.title}>{page} Page</h1>
 
-      <p className={styles.description}>Get started by editing {props.code}</p>
-
+      <p className={styles.description}>
+        Get started by editing {props.children}
+      </p>
       <button onClick={props.onClick}>click!!!</button>
     </>
   );
