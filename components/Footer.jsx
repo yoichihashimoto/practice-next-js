@@ -1,5 +1,7 @@
+import styles from "./Footer.module.css";
+
 export const Footer = (props) => {
-  const { styles,Image } = props;
+  const { Image } = props;
   return (
     <footer className={styles.footer}>
       <a
